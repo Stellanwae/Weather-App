@@ -1,0 +1,344 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: #151313;
+    font-family: sora;
+    
+    letter-spacing: 2px;
+}
+@font-face {
+    font-family: belita;
+    src: url(belita.regular.ttf);
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0.5rem;
+    width: 100%;
+    padding-bottom: 5px;
+
+    box-shadow: 0px 25px 20px -20px rgb(118, 113, 113);
+}
+.logo {
+    font-family: belita;
+    /*font-size: */
+    color: rgb(87, 37, 87);
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #3a86ff, #af4261);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+.span-words {
+    font-family: sora;
+    font-size: 10px;
+}
+.navbar img {
+    width: 10%;
+    height: 10%;
+}
+
+.home-bar {
+    padding: 0;
+    margin: 0;
+}
+
+.list {
+    
+    display:flex;
+    list-style: none;
+    justify-content: space-around
+}
+
+.list li {
+    padding: 0 1.5rem;
+    cursor: pointer;
+}
+.list li:hover {
+    text-decoration: underline;
+}
+
+.modal {
+    max-width: 50px;
+    border-radius: 50px;
+    border: 0;
+}
+
+.aboutcont {
+    max-width: 50ch;
+    border: 0;
+    
+}
+.coffee-button {
+    height: 2.5rem;
+    color: white;
+    font-weight: bold;
+    background: transparent;
+    border: 2px solid white;
+    font-family: inherit;
+    cursor: pointer;
+    letter-spacing: 2px;
+
+}
+.coffee-button:hover {
+    transform:scale(1.1)
+}
+
+.aboutheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#payandmpesa{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+#can-btn {
+    background-color: #fff;
+    padding: 7px 18px;
+    font-family: inherit;
+    border: 2px solid #000;
+}
+#about-canel-btn {
+    background-color: #fff;
+    padding: 7px 18px;
+    font-family: inherit;
+    border: 2px solid #000;
+}
+#about-canel-btn:hover {
+    transform: scale(1.1);
+}
+#can-btn:hover {
+    transform: scale(1.1);
+}
+.page-description {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    padding-left: 25%;
+    padding-bottom: 25rem;
+}
+.page-description h1 {
+ font-weight:180;
+
+}
+.page-description p {
+    font-size: 10px;
+}
+
+.bold-word {
+    font-weight:bold;
+}
+
+.weather-container {
+    display: flex;
+    background-color: white;
+    height: 50rem;
+    border-radius: 10px;
+    font-family: sora;
+    width: 47rem;
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    box-shadow: 0 0 5px grey;
+    padding-right:3rem;
+}
+
+#button-el {
+    border-radius: 50%;
+    border: none;
+    font-size: 1px;
+    color: white;
+    font-weight: bolder;
+    padding: 7px;
+    background-color: #9D91E3;
+}
+#button-el:hover {
+    transform: scale(1.1);
+}
+.bi-search {
+    font-size: 2px;
+}
+#input-el {
+    background-color: #F6F6F6;
+    border: none;
+    border-radius: 15px;
+    padding: 3px 3px 3px 15px;
+    line-height: 2rem;
+    width: 275px;
+    margin-right: 0.5rem;
+}
+#current-location-header {
+    color: #BEBEBE;
+    font-size: 1rem;
+}
+#main-picture {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    width: 20rem;
+    height: 30rem;
+    position: relative;
+
+}
+#main-picture img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 3px grey;
+    margin-left: 15px;
+}
+#main-picture h1 {
+    text-shadow: 0 0 3px #000;
+}
+
+#main-picture i {
+    filter: drop-shadow(0 0 3px #000);
+}
+.minute-details {
+    display: flex;
+    width: 75vh;
+    
+}
+.minute {
+    display: flex;
+    flex-direction: column;
+    background-color: #9D91E3;
+    font-size: 7px;
+    padding: 0 1rem 1rem 1rem;
+    border-radius: 7px;
+    box-shadow: 0 0 2px #BEBEBE;
+    width: 10rem;
+    margin: 1rem
+}
+.left-nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #161A5A;
+    padding: 2rem 3rem;
+    border: 1px solid black;
+    border-radius: 10px 0 0 10px; 
+    font-family: sora;
+    justify-content: space-between;
+}
+.analytics-right {
+    display: flex;
+    flex-direction: column;   
+    padding: 1rem;
+}
+.searchandInput {
+    display: flex;
+    align-items: center;
+}
+
+#localinfo {
+    background-color: white;
+    width: 100%;
+    padding: 1rem;
+    height: 40%;
+    border-radius: 15px;
+    color: #000;
+    font-size: 10px;
+    text-align: center;
+    font-family: fredoka, sans-serif;
+
+}
+.white-side {
+    background-color: white;
+    padding-top: 34rem;
+    width: 100%;   
+}
+.sponsors-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.img-size {
+    padding: 10px;
+    width: 120px;
+    object-fit: contain;
+    height: 100px;
+}
+.expectations {
+    display: flex;
+    flex-direction: column;
+    width: 75ch;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0 3rem 15rem;
+
+}
+.expectations img {
+    width: 50ch;
+}
+.expectRender {
+    color: black;
+}
+
+.accurate-forecast {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5rem;
+}
+
+
+.what-next {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    padding-bottom: 5rem;
+}
+.what-next img{
+    height: 150px;
+    margin: 2rem 2rem 2rem 0;
+}
+.owner-remarks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+.owner-remarks img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #151313;
+}
+
+.network i {
+    padding: 5px;
+}
+.icon {
+
+}
+.icon h1 {
+    margin: 0;
+    padding-top: 10px;
+
+}
+.icon p {
+    padding-bottom: 10px;
+    margin: 0;
+    font-size: 10px;
+}
